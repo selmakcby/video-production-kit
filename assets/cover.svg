@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd6e8"/>
+      <stop offset="35%" stop-color="#ffb3d1"/>
+      <stop offset="70%" stop-color="#c89bff"/>
+      <stop offset="100%" stop-color="#7b6ad8"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="20%" cy="20%" r="40%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="85%" r="35%">
+      <stop offset="0%" stop-color="#ff8fb8" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ff8fb8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="ds" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#5a3a7e" flood-opacity="0.25"/>
+    </filter>
+    <pattern id="dots" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#ffffff" fill-opacity="0.18"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#dots)"/>
+  <rect width="1280" height="640" fill="url(#glow1)"/>
+  <rect width="1280" height="640" fill="url(#glow2)"/>
+
+  <!-- Floating sparkles -->
+  <g fill="#ffffff" opacity="0.85">
+    <path d="M 130 110 L 134 122 L 146 126 L 134 130 L 130 142 L 126 130 L 114 126 L 126 122 Z"/>
+    <path d="M 1140 95 L 1146 113 L 1164 119 L 1146 125 L 1140 143 L 1134 125 L 1116 119 L 1134 113 Z"/>
+    <path d="M 1180 460 L 1184 472 L 1196 476 L 1184 480 L 1180 492 L 1176 480 L 1164 476 L 1176 472 Z"/>
+    <path d="M  90 520 L  94 532 L 106 536 L  94 540 L  90 552 L  86 540 L  74 536 L  86 532 Z"/>
+    <path d="M 690 80 L 692 86 L 698 88 L 692 90 L 690 96 L 688 90 L 682 88 L 688 86 Z" opacity="0.7"/>
+    <path d="M 1080 250 L 1082 256 L 1088 258 L 1082 260 L 1080 266 L 1078 260 L 1072 258 L 1078 256 Z" opacity="0.7"/>
+  </g>
+
+  <!-- Right side: cute laptop + film reel composition -->
+  <g transform="translate(820, 175)" filter="url(#ds)">
+    <!-- Laptop body -->
+    <rect x="0" y="0" width="360" height="225" rx="18" fill="#fff" stroke="#7b6ad8" stroke-width="3"/>
+    <!-- Screen header bar -->
+    <rect x="14" y="14" width="332" height="28" rx="6" fill="#f6f0ff"/>
+    <circle cx="30" cy="28" r="5" fill="#ff8fb8"/>
+    <circle cx="46" cy="28" r="5" fill="#ffd073"/>
+    <circle cx="62" cy="28" r="5" fill="#a6e8b8"/>
+    <!-- Timeline tracks -->
+    <rect x="14" y="56" width="332" height="22" rx="5" fill="#ffd6e8"/>
+    <rect x="20" y="60" width="80" height="14" rx="3" fill="#ff8fb8"/>
+    <rect x="106" y="60" width="120" height="14" rx="3" fill="#ff8fb8"/>
+    <rect x="232" y="60" width="60" height="14" rx="3" fill="#ff8fb8"/>
+    <rect x="298" y="60" width="42" height="14" rx="3" fill="#ff8fb8"/>
+
+    <rect x="14" y="86" width="332" height="22" rx="5" fill="#e7d8ff"/>
+    <rect x="20" y="90" width="60" height="14" rx="3" fill="#a78bff"/>
+    <rect x="86" y="90" width="100" height="14" rx="3" fill="#a78bff"/>
+    <rect x="192" y="90" width="80" height="14" rx="3" fill="#a78bff"/>
+    <rect x="278" y="90" width="62" height="14" rx="3" fill="#a78bff"/>
+
+    <rect x="14" y="116" width="332" height="22" rx="5" fill="#d8f1ff"/>
+    <rect x="20" y="120" width="100" height="14" rx="3" fill="#7bc6ff"/>
+    <rect x="126" y="120" width="70" height="14" rx="3" fill="#7bc6ff"/>
+    <rect x="202" y="120" width="138" height="14" rx="3" fill="#7bc6ff"/>
+
+    <!-- Caption row -->
+    <rect x="14" y="150" width="332" height="20" rx="10" fill="#1e1632" opacity="0.85"/>
+    <rect x="120" y="156" width="120" height="8" rx="2" fill="#fff" opacity="0.95"/>
+    <rect x="246" y="156" width="60" height="8" rx="2" fill="#fff" opacity="0.6"/>
+
+    <!-- Playhead -->
+    <line x1="180" y1="50" x2="180" y2="178" stroke="#ff3b78" stroke-width="2"/>
+    <circle cx="180" cy="50" r="6" fill="#ff3b78"/>
+
+    <!-- Laptop base -->
+    <rect x="-20" y="225" width="400" height="14" rx="7" fill="#7b6ad8"/>
+    <rect x="160" y="225" width="40" height="6" rx="3" fill="#5a3a7e"/>
+  </g>
+
+  <!-- Cute film reel mascot bottom-right -->
+  <g transform="translate(1090, 430)" filter="url(#ds)">
+    <circle r="64" fill="#1e1632"/>
+    <circle r="56" fill="#2a1f47" stroke="#fff" stroke-width="2"/>
+    <!-- reel holes -->
+    <circle r="10" fill="#ffd6e8"/>
+    <g fill="#ffd6e8">
+      <circle cx="32" cy="0" r="7"/>
+      <circle cx="-32" cy="0" r="7"/>
+      <circle cx="0" cy="32" r="7"/>
+      <circle cx="0" cy="-32" r="7"/>
+    </g>
+    <!-- Cute eyes -->
+    <circle cx="-16" cy="-6" r="3.5" fill="#fff"/>
+    <circle cx="16" cy="-6" r="3.5" fill="#fff"/>
+    <!-- Smile -->
+    <path d="M -10 8 Q 0 16 10 8" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Blush -->
+    <ellipse cx="-22" cy="4" rx="5" ry="3" fill="#ff8fb8" opacity="0.7"/>
+    <ellipse cx="22" cy="4" rx="5" ry="3" fill="#ff8fb8" opacity="0.7"/>
+  </g>
+
+  <!-- Title block -->
+  <g transform="translate(80, 200)">
+    <!-- pill tag -->
+    <g>
+      <rect x="0" y="0" width="290" height="34" rx="17" fill="#ffffff" opacity="0.85"/>
+      <text x="20" y="23" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#7b3a8a" font-weight="700" letter-spacing="2">CLAUDE CODE · SKILL · v0.1</text>
+    </g>
+
+    <!-- Main title -->
+    <text x="0" y="100" font-family="ui-rounded, system-ui, -apple-system, 'Helvetica Neue', sans-serif" font-size="84" fill="#ffffff" font-weight="800" letter-spacing="-2">
+      Video Production
+    </text>
+    <text x="0" y="180" font-family="ui-rounded, system-ui, -apple-system, 'Helvetica Neue', sans-serif" font-size="84" fill="#ffffff" font-weight="800" letter-spacing="-2">
+      Kit <tspan fill="#ffd6e8">✨</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="234" font-family="system-ui, -apple-system, 'Helvetica Neue', sans-serif" font-size="22" fill="#ffffff" opacity="0.95" font-weight="500">
+      Uzun ham kayıttan yayına hazır YouTube videosuna,
+    </text>
+    <text x="0" y="266" font-family="system-ui, -apple-system, 'Helvetica Neue', sans-serif" font-size="22" fill="#ffffff" opacity="0.95" font-weight="500">
+      <tspan font-weight="700">5 odaklanmış Claude Code agent'ı</tspan> ile.
+    </text>
+
+    <!-- Feature pills -->
+    <g transform="translate(0, 295)">
+      <g>
+        <rect x="0" y="0" width="155" height="34" rx="17" fill="#ffffff" opacity="0.92"/>
+        <text x="20" y="22" font-family="system-ui, sans-serif" font-size="13" fill="#7b3a8a" font-weight="700">📝 transcript</text>
+      </g>
+      <g transform="translate(165, 0)">
+        <rect x="0" y="0" width="135" height="34" rx="17" fill="#ffffff" opacity="0.92"/>
+        <text x="20" y="22" font-family="system-ui, sans-serif" font-size="13" fill="#7b3a8a" font-weight="700">✂️ cut list</text>
+      </g>
+      <g transform="translate(310, 0)">
+        <rect x="0" y="0" width="130" height="34" rx="17" fill="#ffffff" opacity="0.92"/>
+        <text x="20" y="22" font-family="system-ui, sans-serif" font-size="13" fill="#7b3a8a" font-weight="700">💬 subtitle</text>
+      </g>
+      <g transform="translate(450, 0)">
+        <rect x="0" y="0" width="170" height="34" rx="17" fill="#ffffff" opacity="0.92"/>
+        <text x="20" y="22" font-family="system-ui, sans-serif" font-size="13" fill="#7b3a8a" font-weight="700">▶ description</text>
+      </g>
+      <g transform="translate(0, 44)">
+        <rect x="0" y="0" width="125" height="34" rx="17" fill="#ffffff" opacity="0.92"/>
+        <text x="20" y="22" font-family="system-ui, sans-serif" font-size="13" fill="#7b3a8a" font-weight="700">🐦 social</text>
+      </g>
+      <g transform="translate(135, 44)">
+        <rect x="0" y="0" width="195" height="34" rx="17" fill="#ffffff" opacity="0.92"/>
+        <text x="20" y="22" font-family="system-ui, sans-serif" font-size="13" fill="#7b3a8a" font-weight="700">🎬 CapCut-aware</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Footer ribbon -->
+  <g transform="translate(80, 590)">
+    <text font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#ffffff" opacity="0.85" letter-spacing="2">
+      github.com/selmakcby/video-production-kit
+    </text>
+  </g>
+  <g transform="translate(1080, 590)">
+    <text font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#ffffff" opacity="0.85" letter-spacing="2">
+      MIT · @selmaaii
+    </text>
+  </g>
+</svg>

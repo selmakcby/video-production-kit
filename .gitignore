@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build / dist
+build/
+dist/
+*.egg-info/
+
+# Whisper / model cache
+.cache/
+*.pt
+
+# Outputs (kullanıcı çıktıları repo'ya gitmesin)
+output/
+out/
+tmp/
+*.srt
+*.wav
+*.mp4
+*.mov
+
+# Ama örnek/dosyalarda istenenler tutulur
+!examples/**/*.srt
+!examples/**/*.md
+
+# Environment
+.env
+.env.local
