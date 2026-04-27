@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/cover.png" alt="Video Production Kit cover" width="100%"/>
+  <img src="./assets/cover-dark.png" alt="Video Production Kit cover" width="100%"/>
 </p>
 
 # 🎬 Video Production Kit
